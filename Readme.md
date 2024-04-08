@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Антон Скрипчак](https://up.htmlacademy.ru/adaptive-individual/1/user/2209519).
-* Наставник: `Неизвестно`.
+- Студент: [Антон Скрипчак](https://up.htmlacademy.ru/adaptive-individual/1/user/2209519).
+- Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
