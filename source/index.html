@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page__body">
+
+  <div class="page__wrapper">
+
+    <!-- Шапка -->
+
+    <header class="main-header">
+
+      <!-- Логотип -->
+
+      <a class="main-header__logo logotype" href="#" aria-label="Главная страница">
+
+        <div class="logotype__wrapper"></div>
+        <div class="logotype__icon-text-wrapper"></div>
+
+      </a>
+
+      <!-- Навигация -->
+
+      <nav class="main-header__navigation main-navigation main-navigation--closed">
+
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-navigation__list">
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link link" href="#">Главная</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link link" href="#">Каталог продукции</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link link" href="#">Подбор программы</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+  </div>
+
+</body>
+
 </html>
