@@ -39,7 +39,7 @@
           </li>
 
           <li class="main-navigation__item">
-            <a class="main-navigation__link link link--header" href="#">Каталог продукции</a>
+            <a class="main-navigation__link link link--header" href="catalog.html">Каталог продукции</a>
           </li>
 
           <li class="main-navigation__item">
@@ -51,6 +51,186 @@
       </nav>
 
     </header>
+
+    <!-- Главный Раздел Формы -->
+
+    <main class="main-program">
+
+      <div class="main-program__wrapper">
+        <h1 class="visually-hidden">Форма подбора программы</h1>
+
+        <!-- Форма подбора программы -->
+
+        <section class="main-program__information">
+
+          <div class="main-program__header">
+            <h2 class="main-program__title title title--medium">Подбор программы</h2>
+
+            <p class="main-program__description-title title title--uppercase title--small">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+          </div>
+
+          <form class="main-program__about profile-form" action="https://echo.htmlacademy.ru/" method="get">
+
+            <!-- Персональные данные кота -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--cat">
+              <h3 class="visually-hidden">Персональные данные кота</h3>
+
+              <div class="fieldset-information__container">
+                <label class="fieldset-information__signature signature" for="name">Имя:*</label>
+                <input class="fieldset-information__field field" type="text" id="name" name="name" placeholder="Барсик" required>
+              </div>
+
+              <div class="fieldset-information__container">
+                <label class="fieldset-information__signature signature" for="weight">Вес (кг):*</label>
+                <input class="fieldset-information__field field" type="number" min="1" max="99" id="weight" name="weight" placeholder="7" required>
+              </div>
+
+              <div class="fieldset-information__container">
+                <label class="fieldset-information__signature signature" for="age">Возраст (лет):</label>
+                <input class="fieldset-information__field field" type="number" id="age" name="age" placeholder="7">
+              </div>
+
+            </fieldset>
+
+            <!-- Цель подбора программы -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--border fieldset-information--purpose fieldset-information--radio">
+              <h3 class="visually-hidden">Цель подбора программы</h3>
+
+              <ul class="fieldset-information__list fieldset-information__list--radio">
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="radio" name="purpose-of-program" value="weight-loss" checked="checked">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--radio"></span>
+                    <span class="fieldset-information__control-label fieldset-information__control-label--radio">Похудение</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="radio" name="purpose-of-program" value="weight-gain">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--radio"></span>
+                    <span class="fieldset-information__control-label fieldset-information__control-label--radio">Набор массы</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="radio" name="purpose-of-program" value="difficult">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--radio"></span>
+                    <span class="fieldset-information__control-label fieldset-information__control-label--radio">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <!-- Контактные данные владельца кота -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--small fieldset-information--contacts">
+              <h3 class="fieldset-information__title title title--form">
+                <span class="fieldset-information__title-wrapper"><span>Контактные данные</span><span>(владельца кота)</span></span>
+              </h3>
+
+              <div class="fieldset-information__field-wrapper">
+
+                <div class="fieldset-information__container fieldset-information__container--contacts">
+                  <label class="fieldset-information__signature signature signature--email" for="e-mail">E-mail:*</label>
+                  <input class="fieldset-information__field field field--mail" type="email" id="e-mail" name="e-mail" placeholder="кuklachev@gmail.com" required>
+
+                  <div class="fieldset-information__icon-wrapper"></div>
+
+                </div>
+
+                <div class="fieldset-information__container fieldset-information__container--contacts">
+                  <label class="fieldset-information__signature signature" for="contacts-phone">Телефон:*</label>
+                  <input class="fieldset-information__field field field--secondary field--phone" type="tel" id="contacts-phone" name="contacts-phone" placeholder="8 (960) 900-60-90" required>
+
+                  <div class="fieldset-information__icon-wrapper"></div>
+
+                </div>
+
+              </div>
+
+            </fieldset>
+
+            <!-- Комментарий -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--small fieldset-information--comments">
+
+              <label class="fieldset-information__title fieldset-information__title--comment title title--form" for="comment">
+                <span class="fieldset-information__title-wrapper fieldset-information__title-wrapper--comment">Комментарий</span>
+              </label>
+
+              <div class="fieldset-information__textarea-wrapper">
+                <textarea class="fieldset-information__textarea field field--textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+
+            </fieldset>
+
+            <!-- Дополнительно -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--small">
+              <h3 class="fieldset-information__title fieldset-information__title--checkbox title title--form">
+                <span class="fieldset-information__title-wrapper fieldset-information__title-wrapper--checkbox">Дополнительно</span>
+              </h3>
+
+              <ul class="fieldset-information__list fieldset-information__list--checkbox">
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="sugar-substitute" checked="checked">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Сахарозаменитель</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="drinking-water">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Питьевая вода</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="milk">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Молоко</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="vitamins">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Витамины</span>
+                  </label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <!-- Кнопка Отправить заявку -->
+
+            <div class="profile-form__button-wrapper">
+              <button class="profile-form__button button button--form" type="submit">Отправить заявку</button>
+              <span class="profile-form__note note">* — Обязательные поля</span>
+            </div>
+
+          </form>
+
+        </section>
+
+      </div>
+
+    </main>
 
   </div>
 
