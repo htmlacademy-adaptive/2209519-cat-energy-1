@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Форма подбора программы "Кэт энерджи"</title>
+</head>
+
+<body class="page__body">
+
+  <div class="page__wrapper">
+
+    <!-- Шапка -->
+
+    <header class="main-header main-header--catalog">
+
+      <!-- Логотип -->
+
+      <a class="main-header__logo logotype" href="index.html" aria-label="Главная страница">
+        <img class="logotype__mobile" src="img/logo/logo-mobile.svg" width="190" height="38" alt="Логотип интернет-магазина Кэт энерджи.">
+      </a>
+
+      <!-- Навигация -->
+
+      <nav class="main-header__navigation main-navigation main-navigation--closed">
+
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-navigation__list">
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link--current" href="#">Подбор программы</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <!-- Главный Раздел Формы -->
+
+    <main class="main-program">
+
+      <div class="main-program__wrapper">
+        <h1 class="visually-hidden">Форма подбора программы</h1>
+
+        <!-- Анкета -->
+
+        <section class="main-program__information">
+
+          <div class="main-program__header">
+            <h2 class="main-program__title title">Подбор программы</h2>
+
+            <p class="main-program__description-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+          </div>
+
+          <!-- Форма подбора программы -->
+
+          <form class="main-program__about profile-form" action="https://echo.htmlacademy.ru/" method="get">
+
+            <!-- Персональные данные кота -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--cat">
+              <h3 class="visually-hidden">Персональные данные кота</h3>
+
+              <div class="fieldset-information__container">
+                <label class="fieldset-information__signature signature" for="name">Имя:*</label>
+                <input class="fieldset-information__field field" type="text" id="name" name="name" placeholder="Барсик" required>
+              </div>
+
+              <div class="fieldset-information__container">
+                <label class="fieldset-information__signature signature" for="weight">Вес (кг):*</label>
+                <input class="fieldset-information__field field" type="number" min="1" max="99" id="weight" name="weight" placeholder="7" required>
+              </div>
+
+              <div class="fieldset-information__container">
+                <label class="fieldset-information__signature signature" for="age">Возраст (лет):</label>
+                <input class="fieldset-information__field field" type="number" id="age" name="age" placeholder="7">
+              </div>
+
+            </fieldset>
+
+            <!-- Цель подбора программы -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--border fieldset-information--purpose fieldset-information--radio">
+              <h3 class="visually-hidden">Цель подбора программы</h3>
+
+              <ul class="fieldset-information__list fieldset-information__list--radio">
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="radio" name="purpose-of-program" value="weight-loss" checked="checked">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--radio"></span>
+                    <span class="fieldset-information__control-label fieldset-information__control-label--radio">Похудение</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="radio" name="purpose-of-program" value="weight-gain">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--radio"></span>
+                    <span class="fieldset-information__control-label fieldset-information__control-label--radio">Набор массы</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="radio" name="purpose-of-program" value="difficult">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--radio"></span>
+                    <span class="fieldset-information__control-label fieldset-information__control-label--radio">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <!-- Контактные данные владельца кота -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--small fieldset-information--contacts">
+              <h3 class="fieldset-information__title title title--form">
+                <span class="fieldset-information__title-wrapper"><span>Контактные данные</span><span>(владельца кота)</span></span>
+              </h3>
+
+              <div class="fieldset-information__field-wrapper">
+
+                <div class="fieldset-information__container fieldset-information__container--contacts">
+                  <label class="fieldset-information__signature signature signature--email" for="e-mail">E-mail:*</label>
+                  <input class="fieldset-information__field field field--mail" type="email" id="e-mail" name="e-mail" placeholder="кuklachev@gmail.com" required>
+
+                  <div class="fieldset-information__icon-wrapper"></div>
+
+                </div>
+
+                <div class="fieldset-information__container fieldset-information__container--contacts">
+                  <label class="fieldset-information__signature signature" for="contacts-phone">Телефон:*</label>
+                  <input class="fieldset-information__field field field--secondary field--phone" type="tel" id="contacts-phone" name="contacts-phone" placeholder="8 (960) 900-60-90" required>
+
+                  <div class="fieldset-information__icon-wrapper"></div>
+
+                </div>
+
+              </div>
+
+            </fieldset>
+
+            <!-- Комментарий -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--small fieldset-information--comments">
+
+              <label class="fieldset-information__title fieldset-information__title--comment title title--form" for="comment">
+                <span class="fieldset-information__title-wrapper fieldset-information__title-wrapper--comment">Комментарий</span>
+              </label>
+
+              <div class="fieldset-information__textarea-wrapper">
+                <textarea class="fieldset-information__textarea field field--textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+
+            </fieldset>
+
+            <!-- Дополнительно -->
+
+            <fieldset class="profile-form__field fieldset-information fieldset-information--small">
+              <h3 class="fieldset-information__title fieldset-information__title--checkbox title title--form">
+                <span class="fieldset-information__title-wrapper fieldset-information__title-wrapper--checkbox">Дополнительно</span>
+              </h3>
+
+              <ul class="fieldset-information__list fieldset-information__list--checkbox">
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="sugar-substitute" checked="checked">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Сахарозаменитель</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="drinking-water">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Питьевая вода</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="milk">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Молоко</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-information__item">
+                  <label class="fieldset-information__control">
+                    <input class="fieldset-information__control-input" type="checkbox" name="vitamins">
+                    <span class="fieldset-information__control-mark fieldset-information__control-mark--checkbox"></span>
+                    <span class="fieldset-information__control-label">Витамины</span>
+                  </label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <!-- Кнопка Отправить заявку -->
+
+            <div class="profile-form__button-wrapper">
+              <button class="profile-form__button button button--form" type="submit">Отправить заявку</button>
+              <span class="profile-form__note note">* — Обязательные поля</span>
+            </div>
+
+          </form>
+
+        </section>
+
+        <!-- Раздел Сотрудничество -->
+
+        <section class="main-index__section cooperation">
+
+          <div class="cooperation__container">
+
+            <div class="cooperation__information">
+              <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+
+              <address class="cooperation__description">
+                <span>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
+                <span>Санкт-Петербург</span>
+              </address>
+
+            </div>
+
+            <div class="cooperation__map-wrapper">
+
+              <a class="cooperation__link link" href="#">
+                <picture>
+                  <img class="cooperation__picture" src="img/map/map-mobile.jpg" width="320" height="362" alt="Карта c меткой нахождения магазина.">
+                </picture>
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+
+    <!-- Подвал -->
+
+    <footer class="main-footer">
+
+      <div class="main-footer__wrapper">
+
+        <!-- Лого Подвала-->
+
+        <div class="main-footer__logo-wrapper">
+          <h2 class="visually-hidden">Логотип сайта Cat Energy</h2>
+
+          <a class="main-footer__logo logotype" href="index.html">
+            <img class="logotype__text" src="img/logo/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина Кэт энерджи.">
+          </a>
+
+        </div>
+
+        <!-- Социальные сети -->
+
+        <div class="main-footer__social">
+          <h2 class="visually-hidden">Cat Energy в социальных сетях</h2>
+
+          <ul class="main-footer__list list-network">
+
+            <!-- Вконтакте -->
+
+            <li class="list-network__item">
+              <a class="list-network__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <div class="list-network__icon-wrapper"></div>
+              </a>
+            </li>
+
+            <!-- Ютуб -->
+
+            <li class="list-network__item">
+              <a class="list-network__link" href="#">
+                <span class="visually-hidden">Ютуб</span>
+                <div class="list-network__icon-wrapper"></div>
+              </a>
+            </li>
+
+            <!-- Телеграм -->
+
+            <li class="list-network__item">
+              <a class="list-network__link" href="#">
+                <span class="visually-hidden">Телеграм</span>
+                <div class="list-network__icon-wrapper"></div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Копирайт -->
+
+        <div class="main-footer__copyright copyright">
+
+          <a class="copyright__link link" href="#">
+
+            <span class="copyright__description description">HTML Academy</span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
